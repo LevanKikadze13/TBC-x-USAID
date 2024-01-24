@@ -2,31 +2,44 @@ body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: Arial,Helvetica,sans-serif;
+    font-family: Helvetica, Arial,sans-serif;
+    background-color: rgb(26,30,31);
+    overflow-x: auto;
 }
 a{
     text-decoration: none;
 }
+#TBC-x-academy-logo{
+    transform: scale(1.15);
+    min-width: 150px;   
+}
 .distanced {
-    margin-left: 24vw;
-    margin-right: 24vw;
+    position: static;
+    margin-left: 24rem;
+    margin-right: 23rem;
 
 }
 #js-header {
+    min-width: 1000px;
+    position: static;
+    overflow-x: hidden;
+    overflow-y: hidden;
     background-color: rgb(26,30,31);
     height: 84px;
     display: flex;
     align-items: center;
     position: sticky;
     top: 0;
+    left: 0;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
+    margin: 0px;
+    padding: 0px;
 }
 #header-content-container{
     display: flex;
     align-items: center;
-
     width: 100%;
     justify-content: space-between;
 }
@@ -55,7 +68,35 @@ a{
     justify-content: space-between;
     background-color: yellowgreen;
 }
+#team-image-motto-container{
+    width: 100%;
+    height: 352px;
+    display: flex;
+    align-items: center;
+}
+
+#TBC-team-photo{
+    min-width: 300px;
+    z-index: -1;
+    position: absolute;
+    height: 352px;
+    overflow-x: hidden;
+}
+.team-motto{
+    color: white;
+    font-weight: bold;
+    display: flex;
+    flex-wrap: nowrap;
+    min-width: 100%;
+
+}
+
+#team-motto-TBC-x-USAID{
+    font-size: 42px;
+}
+#team-motto-for-education{
+    font-size: 34px;
+}
 #test{
-    margin-top: 1000px;
-    color: yellow;
+    margin: 10000px;
 }
