@@ -2,29 +2,53 @@ body{
     box-sizing: border-box;
     padding: 0px;
     margin: 0px;
-    font-family: Arial,Helvetica,sans-serif
+    font-family: Arial,Helvetica,sans-serif;
+}
+a{
+    text-decoration: none;
 }
 .distanced {
-    margin-left: 12vw;
-    margin-right: 12vw;
+    margin-left: 24vw;
+    margin-right: 24vw;
 
 }
 #js-header {
     background-color: rgb(26,30,31);
+    height: 84px;
     display: flex;
+    align-items: center;
     position: sticky;
     top: 0;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
 }
+#header-content-container{
+    display: flex;
+    align-items: center;
+
+    width: 100%;
+    justify-content: space-between;
+}
 #header-nav{
-    width: 30%;
+    display: flex;
+    align-items: center;
+}
+.header-nav-item{
+    margin: 22px;
+    color: white;
+    line-height: 26px;
+
+}
+.header-nav-item:hover{
+    cursor: pointer;
+    color: rgb(8,163,206);
+    transition: 0.3s;
+}
+#header-nav-item-TBC-x-USAID{
+    color: rgb(8,163,206);
 }
 
-#header-nav a {
-    color: white;
-}
 #nav-list{
     display: flex;
     flex-direction: row;
