@@ -1,0 +1,37 @@
+body{
+    box-sizing: border-box;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial,Helvetica,sans-serif
+}
+.distanced {
+    margin-left: 12vw;
+    margin-right: 12vw;
+
+}
+#js-header {
+    background-color: rgb(26,30,31);
+    display: flex;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+}
+#header-nav{
+    width: 30%;
+}
+
+#header-nav a {
+    color: white;
+}
+#nav-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: yellowgreen;
+}
+#test{
+    margin-top: 1000px;
+    color: yellow;
+}
