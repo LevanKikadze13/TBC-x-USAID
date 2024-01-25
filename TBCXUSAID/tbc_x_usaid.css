@@ -136,6 +136,13 @@ a{
     min-width: 980px;
     font-size: 32px;
 }
+#more-details-text{
+    position: relative;
+    font-size: 20px;
+    font-weight: bold;
+    color: rgb(8,163,206);
+    top: 25px;
+}
 #test{
     margin: 10000px;
 }
