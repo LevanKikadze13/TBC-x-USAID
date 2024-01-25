@@ -14,8 +14,7 @@ body{
 }
 p{
     display: block;
-    max-width: 100;
-    margin: 10px;
+    max-width: 100%;
     padding: 0px;
 }
 
@@ -36,12 +35,16 @@ a{
     min-width:980px;
     
 }
+#js-header-container{
+    height: 84px;
+}
 #js-header {
+    z-index: 10002;
     min-width: 980px;
-    position: sticky;
+    position: fixed;
     top: 0;
     overflow-x: hidden;
-    overflow-y: hidden;
+    overflow-y: visible;
     background-color: rgb(26,30,31);
     height: 84px;
     display: flex;
@@ -66,10 +69,10 @@ a{
     align-items: center;
 }
 .header-nav-item{
-    margin: 22px;
+    margin: 24px;
     color: white;
     line-height: 26px;
-    font-weight: 16px;
+    font-size: 14px;
 
 }
 .header-nav-item:hover{
@@ -87,6 +90,7 @@ a{
     justify-content: space-between;
 }
 #team-image-motto-container{
+    position: relative;
     min-width: 980px;
     width: 100%;
     min-height: 352px;
@@ -108,7 +112,6 @@ a{
 }
 .description-text{
     color: white;
-    min-width: 980px;
     margin-left: 0px;
 
 }
@@ -165,9 +168,8 @@ a{
 }  
 
 #learning-courses-text-container{
-    position: relative;
     font-size: 24px;
-    margin-top: 30px;
+    margin: 30px 0px 50px 0px;
 }
 #learning-courses-text{
     margin-left: 0px;
@@ -175,9 +177,11 @@ a{
     top: 30px;
 }
 #learning-courses-container{
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 40px;
+    column-gap: 40px;
+    row-gap: 20px;
 }
 .learning-course-item{
     width: 300px;
@@ -202,9 +206,11 @@ a{
     padding: 40px 20px 30px 20px;
 }
 .learning-course-item-name-and-registration{
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    max-width: 100%;
     height: 50%;
 }
 .learning-course-item-name{
