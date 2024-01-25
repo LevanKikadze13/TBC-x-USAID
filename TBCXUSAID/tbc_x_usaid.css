@@ -41,7 +41,7 @@ a{
     overflow-x: hidden;
     overflow-y: hidden;
     background-color: rgb(26,30,31);
-    max-height: 84px;
+    height: 84px;
     display: flex;
     align-items: center;
     width: 100%;
@@ -99,7 +99,7 @@ a{
     z-index: -1;
     position: absolute;
     height: auto;
-    min-height: 300px;
+    min-height: 352px;
     overflow-x: hidden;
     object-fit: cover;
     object-position: 50% 50%;
@@ -130,18 +130,26 @@ a{
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
 }
 #program-description-text{
     min-width: 980px;
     font-size: 32px;
+
 }
+/* #program-description-text-container{
+    background-color: yellowgreen;
+} */
 #more-details-text{
+    margin: 10px;
     position: relative;
     font-size: 20px;
     font-weight: bold;
     color: rgb(8,163,206);
     top: 25px;
+}
+#more-details-text:hover{
+    color: aliceblue;
+    transition: 0.3s;
 }
 #test{
     margin: 10000px;
