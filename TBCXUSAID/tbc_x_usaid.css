@@ -32,7 +32,6 @@ a{
 .centered {
     width: 75%;
     max-width: 980px;
-    background-color: violet;
 }
 #js-header {
     min-width: 980px;
@@ -68,6 +67,7 @@ a{
     margin: 22px;
     color: white;
     line-height: 26px;
+    font-weight: 16px;
 
 }
 .header-nav-item:hover{
@@ -104,9 +104,9 @@ a{
     height: 352px;
     overflow-x: hidden;
     object-fit: cover;
-    object-position: 50% 50%;
-    overflow-clip-margin: content-box;
-    overflow: clip;
+
+
+
 }
 .description-text{
     color: white;
