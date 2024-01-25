@@ -32,6 +32,7 @@ a{
 .centered {
     width: 75%;
     max-width: 980px;
+    
 }
 #js-header {
     min-width: 980px;
@@ -51,7 +52,6 @@ a{
 #TBC-x-academy-logo-container{
     position: relative;
     display: flex;
-
 }
 #header-content-container{
     display: flex;
@@ -92,7 +92,6 @@ a{
     align-items: center;
     justify-content: center;
 }
-
 #TBC-team-photo{
     min-width: 980px;
     display: block;
@@ -104,13 +103,12 @@ a{
     height: 352px;
     overflow-x: hidden;
     object-fit: cover;
-
-
-
 }
 .description-text{
     color: white;
     min-width: 980px;
+    display: flex;
+    background-color: yellowgreen;
 }
 #team-motto-text-container{
     min-width: 980px;
@@ -139,7 +137,6 @@ a{
     display: flex;
     flex-wrap: nowrap;
     font-size: 32px;
-    min-width: 980px;
     margin-bottom: 20px;
 }
 #program-description-text-container{
@@ -157,6 +154,46 @@ a{
     color: aliceblue;
     transition: 0.3s;
 }
+#learning-courses-description-container{
+    width: 100%;
+    min-width: 980px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    justify-content: center;  
+}  
+#learning-courses-text-container{
+    position: relative;
+    min-width:980px;
+    display: flex;
+    flex-wrap: nowrap;
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #test{
     margin: 10000px;
 }
