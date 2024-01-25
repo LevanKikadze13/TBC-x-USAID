@@ -5,7 +5,7 @@
 }
 body{
     font-family: 'Noto Sans Georgian', Arial, Helvetica, sans-serif;
-    display: block;
+   display: block;
     padding: 0px;
     margin: 0px;
     background-color: rgb(26,30,31);
@@ -30,9 +30,9 @@ a{
     width: 100%;
 }
 .distanced {
-    position: relative;
-    margin-left: 20vw;
-    margin-right: 20vw;
+    width: 75%;
+    max-width: 980px;
+    background-color: violet;
 }
 #js-header {
     min-width: 980px;
@@ -44,6 +44,7 @@ a{
     height: 84px;
     display: flex;
     align-items: center;
+    justify-content: center;
     width: 100%;
     z-index: 1000;
     transition: background-color 0.3s ease;
@@ -82,14 +83,15 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    background-color: yellowgreen;
 }
 #team-image-motto-container{
     min-width: 980px;
     width: 100%;
     height: 352px;
+    min-height: 352px;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 
 #TBC-team-photo{
@@ -109,11 +111,8 @@ a{
 .description-text{
     color: white;
     display: flex;
-    flex-wrap: nowrap;
-    min-width: 100%;
-
+    min-width: 980px;
 }
-
 #team-motto-TBC-x-USAID{
     font-weight: bolder;
     font-size: 42px;
@@ -130,22 +129,27 @@ a{
     width: 100%;
     display: flex;
     align-items: center;
+    justify-content: center;
 }
 #program-description-text{
-    min-width: 980px;
+    position: relative;
+    min-width:980px;
+    display: flex;
+    flex-wrap: nowrap;
     font-size: 32px;
-
+    min-width: 980px;
+    margin-bottom: 20px;
 }
-/* #program-description-text-container{
-    background-color: yellowgreen;
-} */
+#program-description-text-container{
+    min-width: 980px;
+}
 #more-details-text{
     margin: 10px;
     position: relative;
     font-size: 20px;
     font-weight: bold;
     color: rgb(8,163,206);
-    top: 25px;
+    bottom: 0px;
 }
 #more-details-text:hover{
     color: aliceblue;
