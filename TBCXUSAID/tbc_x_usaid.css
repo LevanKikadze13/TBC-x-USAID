@@ -245,38 +245,34 @@ a{
     min-width: 980px;
     margin: auto;
     overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
   }
 
   .slider {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
     transition: transform 0.5s ease-in-out;
   }
 
   .slide {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     min-width: 100%;
     box-sizing: border-box;
   }
+  #nextBtn{
+    right: 0px;
+  }
 
-  button {
+ .scrollBtn{
+    background-color: violet;
+    z-index: 10;
     position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 20px;
-    padding: 10px;
-    cursor: pointer;
-    border: none;
-    background: none;
-    color: #333;
-  }
-
-  #prevBtn {
-    left: 10px;
-  }
-
-  #nextBtn {
-    right: 10px;
-  }
-
+ }
 
 
 
