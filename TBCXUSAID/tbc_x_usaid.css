@@ -185,7 +185,7 @@ a{
     height: 414px;
     min-height: 414px;
     border: 1px solid rgb(51,51,51);
-    border-radius: 3px;
+    border-radius: 5px;
     display: flex;
     flex-direction: column;
 }
@@ -225,7 +225,20 @@ a{
     transition: 0.3s;
     color: rgb(0, 88, 112);
 }
-
+#project-partners-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 50px;
+    height: 365px;
+    min-width: 980px;
+    background-color: rgb(43,43,43);
+    padding: 20px 40px 40px 40px;
+}
+#project-partners-text{
+    font-size: 24px;
+}
 
 
 
