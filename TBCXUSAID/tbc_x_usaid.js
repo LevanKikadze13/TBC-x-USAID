@@ -43,3 +43,32 @@ document.addEventListener("scroll", () => {
         header.style.backgroundColor = "rgb(26,30,31)"; 
     }
 });
+
+
+let questions = document.querySelectorAll(".faq-question")
+
+const toggleAnswer = (index) => {
+
+    const answer = document.getElementById(`answer${index}`);
+    answer.classList.toggle('active');
+    if (answer.classList.contains('active')) {
+      answer.style.maxHeight = '500px'; 
+  
+      setTimeout( () => {
+        const actualHeight = answer.scrollHeight; 
+        answer.style.maxHeight = `${actualHeight}px`; // Set max-height to the actual height for smooth transition
+      });
+    } else {
+      // If closing, set max-height back to 0 after a delay
+      setTimeout(() => {
+        answer.style.maxHeight = '0';
+      }, 100);
+    }
+  };
+
+ 
+    questions.forEach(question =>{
+        question.addEventListener('click', () =>{
+            toggleAnswer(question.id.match(/\d+(\.\d+)?/g))
+        })
+    })
