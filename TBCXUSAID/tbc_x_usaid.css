@@ -239,6 +239,43 @@ a{
 #project-partners-text{
     font-size: 24px;
 }
+.slider-container {
+    background-color: yellowgreen;
+    position: relative;
+    min-width: 980px;
+    margin: auto;
+    overflow: hidden;
+  }
+
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+
+  .slide {
+    min-width: 100%;
+    box-sizing: border-box;
+  }
+
+  button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    background: none;
+    color: #333;
+  }
+
+  #prevBtn {
+    left: 10px;
+  }
+
+  #nextBtn {
+    right: 10px;
+  }
 
 
 
