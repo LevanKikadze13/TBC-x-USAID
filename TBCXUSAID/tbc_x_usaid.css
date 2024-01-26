@@ -8,6 +8,15 @@ body{
     overflow-x: auto;
     overflow-y: scroll
 }
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+
 p{
     display: block;
     max-width: 100%;
@@ -240,9 +249,9 @@ a{
     font-size: 24px;
 }
 .slider-container {
-    background-color: yellowgreen;
     position: relative;
     min-width: 980px;
+    max-width: 980px;
     margin: auto;
     overflow: hidden;
     display: flex;
@@ -264,14 +273,25 @@ a{
     min-width: 100%;
     box-sizing: border-box;
   }
+  .scrollBtn{
+    cursor: pointer;
+    z-index: 10;
+    color: rgb(167,166,166);
+    
+ }
   #nextBtn{
-    right: 0px;
+    font-size: 80px;
+    font-weight: 200;
+  }
+  #prevBtn{
+    font-size: 80px;
+    font-weight: 200;
   }
 
- .scrollBtn{
-    background-color: violet;
-    z-index: 10;
-    position: absolute;
+ #slider-content-container{
+    display: flex;
+    align-items: center;
+    width: 100%;
  }
 
 
