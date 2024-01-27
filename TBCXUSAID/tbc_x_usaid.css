@@ -325,9 +325,16 @@ a{
   }
 
   .faq-question {
+    display: flex;
+    position: relative;
     cursor: pointer;
     font-weight: 400;
     border-radius: 5px;
+  }
+  .expand_more{
+    position: absolute;
+    right: 20px;
+    font-weight: 100 !important;
   }
 
   .faq-answer {
@@ -343,13 +350,13 @@ a{
   }
  .registration-stage-text{ 
     margin-left: 20px;
-    line-height: 2;
+    line-height: 2.1;
     font-weight: 400;
     margin-bottom: 5px;
 
   }
   .outro{
-    margin: 40px 0px 40px 0px;
+    margin: 25px 0px 40px 0px;
   }
 
 

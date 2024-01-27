@@ -48,7 +48,6 @@ document.addEventListener("scroll", () => {
 let questions = document.querySelectorAll(".faq-question")
 
 const toggleAnswer = (index) => {
-
     const answer = document.getElementById(`answer${index}`);
     answer.classList.toggle('active');
     if (answer.classList.contains('active')) {
