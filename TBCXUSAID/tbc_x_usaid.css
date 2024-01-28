@@ -11,38 +11,38 @@ body {
 
 @keyframes fade-in-out {
     0% {
-      opacity: 0%;
+        opacity: 0%;
     }
 
     30% {
-      opacity: 60%;
+        opacity: 60%;
     }
 
     40% {
-      opacity: 80%;
+        opacity: 80%;
     }
 
     50% {
-      opacity: 100%;
+        opacity: 100%;
     }
 
     60% {
-      opacity: 80%;
+        opacity: 80%;
     }
 
     70% {
-      opacity: 60%;
+        opacity: 60%;
     }
 
     100% {
-      opacity: 0%;
+        opacity: 0%;
     }
-  }
+}
 
 
-  .fade-in-out {
+.fade-in-out {
     animation: fade-in-out 4s 0s infinite;
-  }
+}
 
 p {
     display: block;
@@ -308,7 +308,7 @@ a {
     min-width: 980px;
     background-color: rgb(43, 43, 43);
     padding: 20px 40px 40px 40px;
-    
+
 }
 
 #project-partners-text {
@@ -335,14 +335,15 @@ a {
 .slide {
     min-width: inherit;
 }
-.slide-content-container{
+
+.slide-content-container {
     display: flex;
     align-items: center;
-    justify-content:space-around;
+    justify-content: space-around;
 }
 
 .scrollBtn {
-   font-size: 80px !important   ;
+    font-size: 80px !important;
     cursor: pointer;
     z-index: 10;
     color: rgb(167, 166, 166);
@@ -364,9 +365,9 @@ a {
     align-items: center;
     justify-content: center;
     align-self: center;
-  }
+}
 
-  .dot {
+.dot {
     height: 7px;
     width: 7px;
     margin: 0 5px;
@@ -374,7 +375,7 @@ a {
     border-radius: 50%;
     display: inline-block;
     cursor: pointer;
-  }
+}
 
 #faq-container {
     padding: 50px;
@@ -401,6 +402,11 @@ a {
     color: rgb(8, 163, 206);
     font-size: 20px;
     font-weight: 700;
+}
+
+#all-questions-text:hover {
+    color: rgb(167, 166, 166);
+    transition: 0.5s;
 }
 
 .faq-list {
@@ -452,14 +458,14 @@ a {
     margin: 25px 0px 40px 0px;
 }
 
-#footer-container{
+#footer-container {
     width: 100%;
     min-width: 980px;
     height: 228px;
     background-color: rgb(26, 30, 31);
 }
 
-#footer{
+#footer {
     min-width: 980px;
     height: 100%;
     width: 100%;
@@ -468,14 +474,15 @@ a {
     justify-content: center;
 }
 
-#footer-content-container{
+#footer-content-container {
     min-width: 980px;
     height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.footer-content{
+
+.footer-content {
     height: 50%;
     display: flex;
     flex-direction: column;
@@ -483,12 +490,12 @@ a {
     justify-content: space-around;
 }
 
-.footer-content-item{
+.footer-content-item {
     color: aliceblue;
     font-size: 14px;
 }
 
-#footer-content-right{
+#footer-content-right {
     align-items: flex-end;
     justify-content: space-between;
 }
@@ -498,29 +505,32 @@ a {
     top: 0;
     right: 0;
     font-size: smaller;
-  }
-#all-rights-served-text-container{
+}
+
+#all-rights-served-text-container {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-#fb-yt-link-container{
+#fb-yt-link-container {
     width: 89px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.fb-yt-link-image{
+.fb-yt-link-image {
     height: 39px;
 }
-#text-us-button-container{
+
+#text-us-button-container {
     position: relative;
     bottom: 0px !important;
 }
-#text-us-button{
+
+#text-us-button {
 
     display: flex;
     border-radius: 5px;
@@ -528,27 +538,8 @@ a {
     background-color: rgb(8, 163, 206);
 
 }
-#text-us-button:hover{
+
+#text-us-button:hover {
     background-color: rgb(167, 166, 166);
     transition: 0.5s;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
