@@ -1,6 +1,7 @@
 # TBC-x-USAID
 ეს არის TBC-x-USAID  ის ვებ-საიტის https://www.tbcacademy.ge/usaid-ის ანალოგი შექმნილი ტექნიკური დავალების ფარგლებში.
 
+    
 პროექტის სტრუქტურა:
 
     index.html - TBC-x-USAID ვებ-საიტის ანალოგი.
