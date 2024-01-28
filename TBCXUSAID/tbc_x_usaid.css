@@ -306,6 +306,7 @@ a {
 }
 
 #project-partners-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -315,6 +316,7 @@ a {
     min-width: 980px;
     background-color: rgb(43, 43, 43);
     padding: 20px 40px 40px 40px;
+    
 }
 
 #project-partners-text {
@@ -324,6 +326,7 @@ a {
 .slider-container {
     position: relative;
     min-width: 980px;
+    width: 980px;
     margin: auto;
     display: flex;
     align-items: center;
@@ -334,34 +337,30 @@ a {
     overflow: hidden;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-
+    justify-content: space-around;
 }
 
 .slide {
-    display: none;
+    min-width: inherit;
+}
+.slide-content-container{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content:space-around;
 }
 
 .scrollBtn {
+   font-size: 80px !important   ;
     cursor: pointer;
     z-index: 10;
     color: rgb(167, 166, 166);
-}
-
-#nextBtn {
-    font-size: 80px;
-    font-weight: 200;
-}
-
-#prevBtn {
-    font-size: 80px;
-    font-weight: 200;
+    font-weight: 200 !important;
 }
 
 #slider-content-container {
+    margin-bottom: 20px;
+    min-height: 100px;
+    position: static;
     display: flex;
     align-items: center;
     justify-content: space-around;
@@ -369,17 +368,15 @@ a {
 }
 
 .dot-container {
-    height: 10%;
     display: flex;
     align-items: center;
     justify-content: center;
     align-self: center;
-    margin-top: 20px;
   }
 
   .dot {
-    height: 15px;
-    width: 15px;
+    height: 7px;
+    width: 7px;
     margin: 0 5px;
     background-color: #bbb;
     border-radius: 50%;

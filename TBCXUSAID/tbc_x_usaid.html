@@ -296,44 +296,51 @@
         </div>
 
         <div id="slider-content-container">
-            <span class="material-symbols-outlined scrollBtn" id="js-prevBtn">
+            <span class="material-symbols-outlined scrollBtn" id="js-prevBtn" onclick="changeSlide(-1)">
                 navigate_before
             </span>
             <div class="slider-container">
                 <div class="slider centered">
                     <div class="slide fade-in-out">
-                        <img src="https://static.wixstatic.com/media/93e8a3_a356bb7d201f4f47870683655e9e4120~mv2.png/v1/fill/w_246,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%204_2x_edited.png"
-                            alt="Image 1">
-                        <img src="https://static.wixstatic.com/media/93e8a3_eaf33552ffd5463e96a5f776dda00111~mv2.png/v1/fill/w_241,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/White%20horiz.png"
-                            alt="Image 2">
-                        <img src="https://static.wixstatic.com/media/93e8a3_ae4ade72135b4c7eaa531290232fe5aa~mv2.png/v1/fill/w_250,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_ae4ade72135b4c7eaa531290232fe5aa~mv2.png"
-                            alt="Image 3">
+                        <div class="slide-content-container">
+                            <img src="https://static.wixstatic.com/media/93e8a3_a356bb7d201f4f47870683655e9e4120~mv2.png/v1/fill/w_246,h_74,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%204_2x_edited.png"
+                                    alt="Image 1">
+                            <img src="https://static.wixstatic.com/media/93e8a3_eaf33552ffd5463e96a5f776dda00111~mv2.png/v1/fill/w_241,h_80,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/White%20horiz.png"
+                                alt="Image 2">
+                            <img src="https://static.wixstatic.com/media/93e8a3_ae4ade72135b4c7eaa531290232fe5aa~mv2.png/v1/fill/w_250,h_45,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_ae4ade72135b4c7eaa531290232fe5aa~mv2.png"
+                                alt="Image 3">
+                        </div>
                     </div>
                     <div class="slide fade-in-out">
-                        <img src="https://static.wixstatic.com/media/93e8a3_b595f31239344928802dd7135813e17c~mv2.png/v1/fill/w_248,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tegeta%20logo%20geo.png"
-                            alt="Image 4">
-                        <img src="https://static.wixstatic.com/media/93e8a3_aca86c1c067d4f8585c3c2cb1b0a0178~mv2.png/v1/fill/w_187,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_aca86c1c067d4f8585c3c2cb1b0a0178~mv2.png"
-                            alt="Image 5">
-                        <img src="https://static.wixstatic.com/media/93e8a3_b6ed8fb2602e4670bc83d1fd4a7d9283~mv2.png/v1/fill/w_312,h_95,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/MicrosoftTeams-image%20(9).png"
+                        <div class="slide-content-container">
+                            <img src="https://static.wixstatic.com/media/93e8a3_b595f31239344928802dd7135813e17c~mv2.png/v1/fill/w_248,h_71,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Tegeta%20logo%20geo.png"
+                                alt="Image 4">
+                            <img src="https://static.wixstatic.com/media/93e8a3_aca86c1c067d4f8585c3c2cb1b0a0178~mv2.png/v1/fill/w_187,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/93e8a3_aca86c1c067d4f8585c3c2cb1b0a0178~mv2.png"
+                                alt="Image 5">
+                            <img src="https://static.wixstatic.com/media/93e8a3_b6ed8fb2602e4670bc83d1fd4a7d9283~mv2.png/v1/fill/w_312,h_95,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/MicrosoftTeams-image%20(9).png"
                             alt="Image 6">
+                        </div>
                     </div>
                     <div class="slide fade-in-out">
-                        <img src="https://static.wixstatic.com/media/93e8a3_ef7860c1a2854f1c8fc20f867ffa30ab~mv2.png/v1/fill/w_227,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/UFC%20GEO%20PNG_edited.png"
-                            alt="Image 7">
+                        <div class="slide-content-container">
+                            <img src="https://static.wixstatic.com/media/93e8a3_ef7860c1a2854f1c8fc20f867ffa30ab~mv2.png/v1/fill/w_227,h_64,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/UFC%20GEO%20PNG_edited.png"
+                                alt="Image 7">
+                            </div>
                     </div>
-                    
-                </div> 
-                <div class="dot-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                  </div>
+
+                </div>
+                
             </div>
-            <span class="material-symbols-outlined scrollBtn" id="js-nextBtn">
+            <span class="material-symbols-outlined scrollBtn" id="js-nextBtn" onclick="changeSlide(-1)">
                 navigate_next
             </span>
+            
         </div>
-
+        <div class="dot-container">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
     </div>
     <div id="faq-container">
         <div class="centered" id="faq-content-container">
@@ -343,7 +350,8 @@
             </div>
             <ul class="faq-list">
                 <li class="faq-item">
-                    <h3 class="faq-question description-text" id="question1">როგორ ხდება კურსებზე რეგისტრაცია და შერჩევა?
+                    <h3 class="faq-question description-text" id="question1">როგორ ხდება კურსებზე რეგისტრაცია და
+                        შერჩევა?
                         <span class="material-symbols-outlined expand_more">
                             expand_more
                         </span>
@@ -354,24 +362,31 @@
                             <p id="answer1-intro">კურსზე რეგისტრაციისთვის უნდა გაიარო რამდენიმე ეტაპი:</p>
 
                             <div class="registration-stage-text" id="stage1">
-                                <strong>I ეტაპი -</strong> პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის განკუთვნილი
+                                <strong>I ეტაპი -</strong> პირველ ეტაპზე საჭიროა, შეავსო სასურველი კურსისთვის
+                                განკუთვნილი
                                 სარეგისტრაციო ფორმა,
-                                რომელიც განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ დაიწყება
+                                რომელიც განთავსებულია კურსის შიდა გვერდზე. კურსზე რეგისტრაციის დასრულების შემდეგ
+                                დაიწყება
                                 შემოსული განცხადებების გადარჩევა.
                             </div>
 
                             <div class="registration-stage-text" id="stage2">
-                                <strong>II ეტაპი -</strong> შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია, ზოგიერთი
+                                <strong>II ეტაპი -</strong> შერჩევის მეორე ეტაპი კურსების მიხედვით განსხვავებულია,
+                                ზოგიერთი
                                 კურსისთვის მოცავს პრე-ტესტს,
-                                ზოგიერთ კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის შემთხვევაში გადახვალ
+                                ზოგიერთ კურსზე კი უნარების ტესტს, სადაც მინიმალური ზღვარის გადალახვის შემთხვევაში
+                                გადახვალ
                                 შერჩევის შემდეგ ეტაპზე.
                             </div>
 
                             <div class="registration-stage-text" id="stage3">
-                                <strong>III ეტაპი -</strong> მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance კურსებზე,
-                                სადაც მოითხოვება გარკვეული ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი ცოდნის
+                                <strong>III ეტაპი -</strong> მესამე ეტაპი კურსების მიხედვით განსხვავდება: Advance
+                                კურსებზე,
+                                სადაც მოითხოვება გარკვეული ტექნიკური ცოდნა, მონაწილეებმა უნდა დაწერონ ტექნიკური ტესტი
+                                ცოდნის
                                 დონის შესამოწმებლად,
-                                ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ ტექნიკური
+                                ხოლო კურსებზე, სადაც რაიმე ტიპის წინასწარი ცოდნა მოთხოვნილი არ არის უნდა შეასრულოთ
+                                ტექნიკური
                                 დავალება,
                                 რაც თქვენი კვლევისა და თვითსწავლის უნარს ამოწმებს.
                             </div>
@@ -385,12 +400,14 @@
 
                             <p class="outro">* სანამ კურსზე დარეგისტრირდები მნიშვნელოვანია, ყურადღებით წაიკითხო კურსის
                                 აღწერა,
-                                ნახო რას ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ არა კურსს დასწრების წინაპირობა.</p>
+                                ნახო რას ისწავლი კურსის განმავლობაში და გაიგო გააჩნია თუ არა კურსს დასწრების წინაპირობა.
+                            </p>
                         </div>
                     </div>
                 </li>
                 <li class="faq-item">
-                    <h3 class="faq-question description-text" id="question2">შემიძლია თუ არა ერთზე მეტ კურსზე რეგისტრაცია?
+                    <h3 class="faq-question description-text" id="question2">შემიძლია თუ არა ერთზე მეტ კურსზე
+                        რეგისტრაცია?
                         <span class="material-symbols-outlined expand_more">
                             expand_more
                         </span>
@@ -421,27 +438,28 @@
             </ul>
         </div>
     </div>
-<div id="footer-container">
-    <footer id="footer">
-        <div class="centered" id="footer-content-container">
-            <div class="footer-content" id="footer-content-left">
-                <div class="footer-content-item" id="tbc-image-container">
-                    <img id="tbc-image"
-                        src="https://static.wixstatic.com/media/dd97f4_86c58c47370442a889e9a4e9db4eb00c~mv2.png/v1/crop/x_1,y_0,w_426,h_123/fill/w_106,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%201%402x.png">
-                </div>
-                <div class="footer-content-item" id="all-rights-served-text-container">
-                    <p class\="copyright"\><span style="cursor: pointer;">&copy; 2023</span> ყველა უფლება დაცულია</p\>
-                </div>
-                <div class="footer-content-item" id="rules-text-container">
-                    <p id="rules-text" style="cursor: pointer;">
-                        წესები და პირობები
-                    </p>
+    <div id="footer-container">
+        <footer id="footer">
+            <div class="centered" id="footer-content-container">
+                <div class="footer-content" id="footer-content-left">
+                    <div class="footer-content-item" id="tbc-image-container">
+                        <img id="tbc-image"
+                            src="https://static.wixstatic.com/media/dd97f4_86c58c47370442a889e9a4e9db4eb00c~mv2.png/v1/crop/x_1,y_0,w_426,h_123/fill/w_106,h_30,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/Asset%201%402x.png">
+                    </div>
+                    <div class="footer-content-item" id="all-rights-served-text-container">
+                        <p class\="copyright" \><span style="cursor: pointer;">&copy; 2023</span> ყველა უფლება დაცულია
+                            </p\>
+                    </div>
+                    <div class="footer-content-item" id="rules-text-container">
+                        <p id="rules-text" style="cursor: pointer;">
+                            წესები და პირობები
+                        </p>
 
+                    </div>
                 </div>
             </div>
-        </div>
-    </footer>
-</div>
+        </footer>
+    </div>
 
 
 

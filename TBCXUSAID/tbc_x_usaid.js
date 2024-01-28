@@ -1,6 +1,8 @@
 let currentSlideIndex = 1;
 let slideInterval;
 
+let sliderContent = document.querySelector('#slider-content-container')
+
 const showSlide = (index) => {
 const slides = document.querySelectorAll('.slide');
 const dots = document.querySelectorAll('.dot');
@@ -33,10 +35,13 @@ const currentSlide = (n) => {
 showSlide(currentSlideIndex = n);
 };
 
-// Automatic slideshow change every 3 seconds
+// Automatic slideshow change every 4 seconds
 slideInterval = setInterval(() => {
 changeSlide(1);
 }, 4000);
+
+
+
 
 // Initial slide show
 showSlide(currentSlideIndex);
