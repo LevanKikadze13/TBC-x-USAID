@@ -9,39 +9,6 @@ body {
     overflow-y: scroll
 }
 
-@keyframes fade-in-out {
-    0% {
-        opacity: 0%;
-    }
-
-    30% {
-        opacity: 60%;
-    }
-
-    40% {
-        opacity: 80%;
-    }
-
-    50% {
-        opacity: 100%;
-    }
-
-    60% {
-        opacity: 80%;
-    }
-
-    70% {
-        opacity: 60%;
-    }
-
-    100% {
-        opacity: 0%;
-    }
-}
-
-.fade-in-out {
-    animation: fade-in-out 4s 0s infinite;
-}
 
 p {
     display: block;
