@@ -462,11 +462,12 @@ a {
 #footer-container{
     width: 100%;
     min-width: 980px;
-    height: 230px;
+    height: 228px;
     background-color: rgb(26, 30, 31);
 }
 
 #footer{
+    min-width: 980px;
     height: 100%;
     width: 100%;
     display: flex;
@@ -482,11 +483,11 @@ a {
     justify-content: space-between;
 }
 .footer-content{
-    background-color: yellowgreen;
+    height: 50%;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .footer-content-item{
@@ -494,6 +495,10 @@ a {
     font-size: 14px;
 }
 
+#footer-content-right{
+    background-color: yellowgreen;
+    align-items: flex-end;
+}
 
 .copyright {
     position: absolute;
@@ -506,6 +511,17 @@ a {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+#fb-yt-link-container{
+    width: 89px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.fb-yt-link-image{
+    height: 39px;
 }
 
 
