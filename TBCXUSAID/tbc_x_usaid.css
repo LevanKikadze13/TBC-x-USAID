@@ -108,13 +108,11 @@ a {
     font-size: 14px;
 
 }
-
 .header-nav-item:hover {
     cursor: pointer;
     color: rgb(8, 163, 206);
     transition: 0.3s;
 }
-
 #header-nav-item-TBC-x-USAID {
     color: rgb(8, 163, 206);
 }
@@ -371,6 +369,7 @@ a {
 #faq-text-all-questions-container {
     min-width: inherit;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -399,6 +398,7 @@ a {
 }
 
 .faq-question {
+    display: flex;
     position: relative;
     cursor: pointer;
     font-weight: 400;
@@ -426,7 +426,8 @@ a {
 }
 
 .registration-stage-text {
-    margin: 20px 0px 5px;
+    margin-left: 20px;
+    margin-bottom: 5px;
     line-height: 2.1;
     font-weight: 400;
 }
