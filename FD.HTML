@@ -1,0 +1,86 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+  <title>slide image tutorial</title>
+  <style>
+  body{
+    padding: 0;
+    margin: 0;
+    background-color: floralwhite;
+}
+
+h1{
+    margin-top: 50px;
+    margin-left: 510px;
+    font-size: 60px;
+    font-family: 'Karla', sans-serif;
+    font-weight: lighter;
+}
+
+.slider-frame{
+    overflow: hidden;
+    height: 800px;
+    width: 1200px;
+    margin-left: 360px;
+    margin-top: 20px;
+}
+
+
+
+@keyframes slide_animation{
+    0% {opacity: 0%;}
+    10% {opacity: 10%;}
+    20% {opacity: 20%;}
+    30% {opacity: 30%;}
+    40% {opacity: 40%;}
+    50% {opacity: 50%;}
+    60% {opacity: 60%;}
+    70% {opacity: 70%;}
+    80% {opacity: 80%;}
+    90% {opacity: 90%;}
+    100% {opacity: 100%;}
+}
+
+.slide-images{
+    width: 3600px;
+    height: 800px;
+    margin: 0 0 0 -2400px;
+    position: relative;
+    animation-name: slide_animation;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-play-state: running;
+}
+
+.img-container{
+    height: 800px;
+    width: 1200px;
+    position: relative;
+    float: left;
+}
+          </style>
+</head>
+<body>
+  <h1>Auto - Image Slider HTML and CSS</h1>
+      <div class="slider-frame">
+          <div class="slide-images">
+                  <div class="img-container">
+                      <img src="https://images.unsplash.com/photo-1541963463532-d68292c34b19?q=80&w=1000&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8M3x8fGVufDB8fHx8fA%3D%3D"><br>
+                      <img src="https://i.ytimg.com/vi/j18CH0Grhbw/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLD6FUmLhyo-vEPQDL3NzFCFoNUFDw">
+                  </div>
+                  <div class="img-container">
+                      <img src="https://i.ytimg.com/vi/9HcxHDS2w1s/hq720.jpg?sqp=-oaymwEjCOgCEMoBSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCpdcNbXuuNiCifPnYEH0opYwPjUw">
+                  </div>
+                  <div class="img-container">
+                      <img src="https://i.ytimg.com/vi/fw3fOHnzCjI/hqdefault.jpg?sqp=-oaymwEjCOADEI4CSFryq4qpAxUIARUAAAAAGAElAADIQj0AgKJDeAE=&rs=AOn4CLCuJ8mmd2_B8ytWDLlGbOxs3IVITQ">
+                  </div>
+          </div>
+      </div>
+</body>
+</html>

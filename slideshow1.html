@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <title>W3.CSS</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <style>
+    body {
+      background-color: yellowgreen;
+    }
+    .myElement {
+  opacity: 0;
+  transition: opacity 1s ease-in-out; /* Animation duration and timing function */
+}
+
+.fade-in {
+  opacity: 1;
+}
+
+/* Optional: Add some styling to the element */
+.myElement {
+  padding: 20px;
+  background-color: lightblue;
+  text-align: center;
+  font-size: 18px;
+}
+
+  </style>
+  <body>
+    <div class="myElement">Hello, I'm fading in and out!</div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+    var element = document.querySelector(".myElement");
+
+  function fadeInOut() {
+    element.classList.toggle("fade-in");
+    
+    // Optional: You can remove the class after a delay to make it fade out
+    setTimeout(function() {
+      element.classList.toggle("fade-in");
+    }, 2000); // Change the delay (in milliseconds) as needed
+  }
+
+  // Trigger the animation initially and set it to repeat
+  fadeInOut();
+  setInterval(fadeInOut, 4000); // Change the interval (in milliseconds) as needed
+});
+
+    </script>
+  </body>
+</html>
