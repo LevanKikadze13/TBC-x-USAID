@@ -108,11 +108,13 @@ a {
     font-size: 14px;
 
 }
+
 .header-nav-item:hover {
     cursor: pointer;
     color: rgb(8, 163, 206);
     transition: 0.3s;
 }
+
 #header-nav-item-TBC-x-USAID {
     color: rgb(8, 163, 206);
 }
