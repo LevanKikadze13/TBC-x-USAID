@@ -1,14 +1,11 @@
 document.addEventListener("scroll", () => {
   const header = document.getElementById("js-header");
   if (window.scrollY > 0) {
-      header.style.backgroundColor = "rgb(26,30,31, 0.8)"; 
+    header.style.backgroundColor = "rgb(26,30,31, 0.8)";
   } else {
-      header.style.backgroundColor = "rgb(26,30,31)"; 
+    header.style.backgroundColor = "rgb(26,30,31)";
   }
 });
-
-
-
 
 let currentSlideIndex = 1;
 let slideInterval;
@@ -16,40 +13,40 @@ let slideInterval;
 let sliderContent = document.querySelector('#slider-content-container')
 
 const showSlide = (index) => {
-const slides = document.querySelectorAll('.slide');
-const dots = document.querySelectorAll('.dot');
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
 
-if (index > slides.length) {
-  currentSlideIndex = 1;
-}
-if (index < 1) {
-  currentSlideIndex = slides.length;
-}
+  if (index > slides.length) {
+    currentSlideIndex = 1;
+  }
+  if (index < 1) {
+    currentSlideIndex = slides.length;
+  }
 
-slides.forEach((slide) => (slide.style.display = 'none'));
-dots.forEach((dot) => (dot.className = 'dot'));
+  slides.forEach((slide) => (slide.style.display = 'none'));
+  dots.forEach((dot) => (dot.className = 'dot'));
 
-slides[currentSlideIndex - 1].style.display = 'block';
-dots[currentSlideIndex - 1].className = 'dot active';
+  slides[currentSlideIndex - 1].style.display = 'block';
+  dots[currentSlideIndex - 1].className = 'dot active';
 
-// Clear the interval and restart it
-clearInterval(slideInterval);
-slideInterval = setInterval(() => {
-  changeSlide(1);
-}, 4000);
+  // Clear the interval and restart it
+  clearInterval(slideInterval);
+  slideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 4000);
 };
 
 const changeSlide = (n) => {
-showSlide(currentSlideIndex += n);
+  showSlide(currentSlideIndex += n);
 };
 
 const currentSlide = (n) => {
-showSlide(currentSlideIndex = n);
+  showSlide(currentSlideIndex = n);
 };
 
 // Automatic slideshow change every 4 seconds
 slideInterval = setInterval(() => {
-changeSlide(1);
+  changeSlide(1);
 }, 4000);
 
 
