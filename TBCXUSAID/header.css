@@ -1,0 +1,61 @@
+#TBC-x-academy-logo {
+    position: relative;
+    left: 12px;
+    transform: scale(1.15);
+}
+
+#js-header-container {
+    height: 84px;
+}
+
+#js-header {
+    z-index: 1000;
+    min-width: 980px;
+    position: fixed;
+    top: 0;
+    overflow-x: hidden;
+    background-color: rgb(26, 30, 31);
+    height: 84px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+#TBC-x-academy-logo-container {
+    position: relative;
+    display: flex;
+}
+
+#header-content-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#header-nav {
+    display: flex;
+    align-items: center;
+}
+
+.header-nav-item {
+    margin: 24px;
+    color: white;
+    line-height: 26px;
+    font-size: 14px;
+
+}
+.header-nav-item:hover {
+    cursor: pointer;
+    color: rgb(8, 163, 206);
+    transition: 0.3s;
+}
+#header-nav-item-TBC-x-USAID {
+    color: rgb(8, 163, 206);
+}
+
+#nav-list {
+    display: flex;
+    justify-content: space-between;
+}

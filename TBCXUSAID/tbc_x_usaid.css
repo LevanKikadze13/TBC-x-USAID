@@ -53,17 +53,17 @@ a {
     text-decoration: none;
 }
 
-#TBC-x-academy-logo {
-    position: relative;
-    left: 12px;
-    transform: scale(1.15);
-}
-
 .centered {
     width: 75%;
     max-width: 980px;
     position: relative;
     min-width: 980px;
+}
+
+#TBC-x-academy-logo {
+    position: relative;
+    left: 12px;
+    transform: scale(1.15);
 }
 
 #js-header-container {
