@@ -142,50 +142,49 @@
   </div>
 
   <script>
-    let currentSlideIndex = 1;
-    let slideInterval;
+  let currentSlideIndex = 1;
+  let slideInterval;
 
-    function showSlide(index) {
-      const slides = document.querySelectorAll('.slide');
-      const dots = document.querySelectorAll('.dot');
+const showSlide = (index) => {
+  const slides = document.querySelectorAll('.slide');
+  const dots = document.querySelectorAll('.dot');
 
-      if (index > slides.length) {
-        currentSlideIndex = 1;
-      }
-      if (index < 1) {
-        currentSlideIndex = slides.length;
-      }
+  if (index > slides.length) {
+    currentSlideIndex = 1;
+  }
+  if (index < 1) {
+    currentSlideIndex = slides.length;
+  }
 
-      slides.forEach((slide) => (slide.style.display = 'none'));
-      dots.forEach((dot) => (dot.className = 'dot'));
+  slides.forEach((slide) => (slide.style.display = 'none'));
+  dots.forEach((dot) => (dot.className = 'dot'));
 
-      slides[currentSlideIndex - 1].style.display = 'block';
-      dots[currentSlideIndex - 1].className = 'dot active';
+  slides[currentSlideIndex - 1].style.display = 'block';
+  dots[currentSlideIndex - 1].className = 'dot active';
 
-      // Clear the interval and restart it
-      clearInterval(slideInterval);
-      slideInterval = setInterval(() => {
-        changeSlide(1);
-      }, 4000);
-    }
+  // Clear the interval and restart it
+  clearInterval(slideInterval);
+  slideInterval = setInterval(() => {
+    changeSlide(1);
+  }, 4000);
+};
 
-    function changeSlide(n) {
-      showSlide(currentSlideIndex += n);
-    }
+const changeSlide = (n) => {
+  showSlide(currentSlideIndex += n);
+};
 
-    function currentSlide(n) {
-      showSlide(currentSlideIndex = n);
-    }
+const currentSlide = (n) => {
+  showSlide(currentSlideIndex = n);
+};
 
-    // Automatic slideshow change every 3 seconds
-    slideInterval = setInterval(() => {
-      changeSlide(1);
-    }, 4000);
+// Automatic slideshow change every 3 seconds
+slideInterval = setInterval(() => {
+  changeSlide(1);
+}, 4000);
 
+// Initial slide show
+showSlide(currentSlideIndex);
 
-
-    // Initial slide show
-    showSlide(currentSlideIndex);
 
   </script>
 

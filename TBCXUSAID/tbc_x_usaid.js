@@ -1,48 +1,47 @@
-let currentSlide = 0;
-let intervalId;
-let nextBtn = document.querySelector("#nextBtn");
-let prevBtn = document.querySelector("#prevBtn");
-
-nextBtn.addEventListener("click", () => {
-  nextSlide();
-});
-prevBtn.addEventListener("click", () => {
-  prevSlide();
-});
+let currentSlideIndex = 1;
+let slideInterval;
 
 const showSlide = (index) => {
-  const slider = document.querySelector(".slider");
-  const slides = document.querySelectorAll(".slide");
-  currentSlide = (index + slides.length) % slides.length;
-  slider.style.transform = `translateX(${-currentSlide * 100}%)`;
+const slides = document.querySelectorAll('.slide');
+const dots = document.querySelectorAll('.dot');
+
+if (index > slides.length) {
+  currentSlideIndex = 1;
+}
+if (index < 1) {
+  currentSlideIndex = slides.length;
+}
+
+slides.forEach((slide) => (slide.style.display = 'none'));
+dots.forEach((dot) => (dot.className = 'dot'));
+
+slides[currentSlideIndex - 1].style.display = 'block';
+dots[currentSlideIndex - 1].className = 'dot active';
+
+// Clear the interval and restart it
+clearInterval(slideInterval);
+slideInterval = setInterval(() => {
+  changeSlide(1);
+}, 4000);
 };
 
-const nextSlide = () => {
-  clearInterval(intervalId);
-  showSlide(currentSlide + 1);
-  startSlider();
+const changeSlide = (n) => {
+showSlide(currentSlideIndex += n);
 };
 
-const prevSlide = () => {
-  clearInterval(intervalId);
-  showSlide(currentSlide - 1);
-  startSlider();
+const currentSlide = (n) => {
+showSlide(currentSlideIndex = n);
 };
 
-const startSlider = () => {
-  intervalId = setInterval(nextSlide, 5000);
-};
+// Automatic slideshow change every 3 seconds
+slideInterval = setInterval(() => {
+changeSlide(1);
+}, 4000);
 
-startSlider();
+// Initial slide show
+showSlide(currentSlideIndex);
 
-document.addEventListener("scroll", () => {
-  const header = document.getElementById("js-header");
-  if (window.scrollY > 0) {
-    header.style.backgroundColor = "rgb(26,30,31, 0.8)";
-  } else {
-    header.style.backgroundColor = "rgb(26,30,31)";
-  }
-});
+
 
 let questions = document.querySelectorAll(".faq-question");
 
